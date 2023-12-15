@@ -173,7 +173,7 @@
   </div>
 
   <div class="top-right-links">
-        <a href="https://github.com/oracioone" target="_blank">
+        <a href="https://github.com/leciojor" target="_blank">
         <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="GitHub" onclick="console.log('GitHub clicked');">
     </a>
 
