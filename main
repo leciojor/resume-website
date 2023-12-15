@@ -1,0 +1,306 @@
+//Full CSS, HTLM, JAVASCRIPT code (yes, I should have done individual files, I know)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .top-right-links img {
+      max-width: 30px;
+      margin-left: 10px;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      line-height: 1.6;
+      background: #000;
+      overflow: auto;
+    }
+
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 10px;
+      max-width: 10px;
+      opacity: 1;
+      animation: fadeIn 1s ease-in-out 20s;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out;
+      position: relative;
+    }
+
+    .title-subtitle-container {
+      position: relative;
+      padding: 200px;
+      overflow: hidden;
+    }
+
+    .title-subtitle-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-sizing: border-box;
+      border: 100px solid transparent;
+      border-image: url('https://datasets.activeloop.ai/wp-content/uploads/2019/12/MNIST-handwritten-digits-dataset-visualized-by-Activeloop.webp') 100 repeat;
+    }
+
+    .title-subtitle-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out 0.5s;
+    }
+
+    .title-subtitle-container:hover img {
+      opacity: 1;
+    }
+
+    header h1,
+    header h2 {
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    header h1 {
+      font-size: 2em;
+      border-right: 2px solid #fff;
+      animation: typing 3s steps(40, end), fadeIn 1s ease-in-out 5s;
+    }
+
+    header h2 {
+      font-size: 1.5em;
+      animation: fadeIn 0.1s ease-in-out 5s;
+    }
+
+    section {
+      text-align: center;
+      padding: 2em;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    section p {
+      font-size: 1.2em;
+    }
+
+    .top-right-links {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .hidden-section {
+      opacity: 0;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+      animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+      animation-duration: 5s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+  #subtitle {
+      position: relative;
+      font-size: 1.5em;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    #static-text {
+      display: inline-block;
+    }
+
+#subtitle-text {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  animation: typing 5s steps(40, end), fadeIn 1s ease-in-out 5s;
+  font-weight: bold; /* Add this line to make the text bold */
+  text-decoration: underline; /* Add this line to underline the text */
+}
+  </style>
+  <title>Lecio Ribeiro - Portfolio</title>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="https://i.postimg.cc/nhVyjtmS/Projeto-Remover-fundo-2.png" alt="Logo" style="max-width: 165px; margin-left: 1px;"> 
+  </div>
+
+  <div class="top-right-links">
+        <a href="https://github.com/oracioone" target="_blank">
+        <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="GitHub" onclick="console.log('GitHub clicked');">
+    </a>
+
+    <a href="https://linkedin.com/in/l%C3%A9cio-ribeiro-09199b252" target="_blank">
+        <img src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-vkm0drb1.png" alt="LinkedIn">
+    </a>
+
+    <a href="mailto:leciojor@byu.edu">
+        <img src="https://imaginethatcreative.net/blog/wp-content/uploads/2023/06/2250206.png" alt="Email">
+    </a>
+
+  </div>
+
+  <header>
+    <div class="title-subtitle-container">
+      <div class="name-subtitle">
+        <h1>Lecio Ribeiro</h1>
+        <div id="subtitle">
+          <span id="subtitle-text"></span>
+          <span id="static-text"> Student and Software Developer</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="professional-goals" class="hidden-section">
+    <h2>Professional Goals</h2>
+    <p>Content for Professional Goals section.</p>
+  </section>
+
+
+  <section id="personal-projects" class="hidden-section">
+    <h2>Personal Projects</h2>
+    <p>Content for Personal Projects section.</p>
+  </section>
+
+  <section id="education" class="hidden-section">
+    <h2>Education</h2>
+    <p>Content for Education section.</p>
+  </section>
+
+  <section id="work-experience" class="hidden-section">
+    <h2>Work Experience</h2>
+    <p>Content for Work Experience section.</p>
+  </section>
+
+  <section id="more-text" class="hidden-section">
+    <h2>More Text</h2>
+    <p>Additional content to be revealed as you scroll.</p>
+  </section>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var logo = document.querySelector('.logo');
+      var header = document.querySelector('header');
+      var sections = document.querySelectorAll('section');
+      var topRightLinks = document.querySelector('.top-right-links');
+      var windowHeight = window.innerHeight;
+    
+      function fadeInElements() {
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+        var logoPosition = logo.getBoundingClientRect();
+        logo.style.opacity = logoPosition.top < windowHeight * 0.75 ? 1 : 0;
+    
+        var headerPosition = header.getBoundingClientRect();
+        header.style.opacity = headerPosition.top < windowHeight * 0.75 ? 1 : 0;
+    
+        sections.forEach(function (section) {
+          var sectionPosition = section.getBoundingClientRect();
+          section.style.opacity =
+            sectionPosition.top < windowHeight * 0.75 &&
+            sectionPosition.bottom >= 0
+              ? 1
+              : 0;
+        });
+    
+        topRightLinks.style.opacity = topRightLinks.getBoundingClientRect().top < windowHeight * 0.5 ? 1 : 0;
+      }
+    
+      window.addEventListener("scroll", function () {
+        fadeInElements();
+      });
+    
+      fadeInElements();
+    
+      var subtitleText = document.getElementById("subtitle-text");
+      var staticText = document.getElementById("static-text");
+      var topics = ["Machine Learning", "Computer Science", "Math", "Deep Learning", "Data Science"];
+      var currentTopicIndex = 0;
+    
+      function updateSubtitle() {
+        subtitleText.textContent = "";
+        var topic = topics[currentTopicIndex];
+        var interval = setInterval(function () {
+          subtitleText.textContent += topic.charAt(subtitleText.textContent.length);
+          if (subtitleText.textContent === topic) {
+            clearInterval(interval);
+            setTimeout(function () {
+              destypeSubtitle();
+            }, 1000);
+          }
+        }, 80);
+      }
+    
+      function destypeSubtitle() {
+        var interval = setInterval(function () {
+          subtitleText.textContent = subtitleText.textContent.slice(0, -1);
+          if (subtitleText.textContent === "") {
+            clearInterval(interval);
+            setTimeout(function () {
+              currentTopicIndex = (currentTopicIndex + 1) % topics.length;
+              updateSubtitle();
+            }, 1000);
+          }
+        }, 80);
+      }
+    
+      setTimeout(function () {
+        updateSubtitle();
+      }, 5000);
+    });
+  </script>
+
+
+
+
+</body>
+</html>
