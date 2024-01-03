@@ -198,31 +198,39 @@
       </div>
     </div>
   </header>
-
+ 
+// add picture of me 
+ <img
+  class="fit-picture"
+  src="imagem minha"
+   />
+ 
   <section id="professional-goals" class="hidden-section">
-    <h2>Professional Goals</h2>
-    <p>Content for Professional Goals section.</p>
+    <h2><p style="text-align:left;">Professional Goals</h2>
+    <p style="text-align:left;">. Becoming Machine Learning Engineer 
+    </br>. Researching explainable models for Modern Physics Research 
+    </br>. Have unfinished personal projects into production until 2024</p>
   </section>
 
 
   <section id="personal-projects" class="hidden-section">
-    <h2>Personal Projects</h2>
-    <p>Content for Personal Projects section.</p>
+    <h2><p style="text-align:right;">Personal Projects</h2>
+    <p style="text-align:right;">Python Scripture Memorizer . <br> can be found here -> <button type="button">Download Project</button></p>
   </section>
 
   <section id="education" class="hidden-section">
-    <h2>Education</h2>
-    <p>Content for Education section.</p>
+    <h2><p style="text-align:left;">Education</h2>
+    <p style="text-align:left;">Content for Education section.</p>
   </section>
 
   <section id="work-experience" class="hidden-section">
-    <h2>Work Experience</h2>
-    <p>Content for Work Experience section.</p>
+    <h2><p style="text-align:right;">Work Experience</h2>
+    <p style="text-align:right;">Content for Work Experience section.</p>
   </section>
 
   <section id="more-text" class="hidden-section">
-    <h2>More Text</h2>
-    <p>Additional content to be revealed as you scroll.</p>
+    <h2><p style="text-align:left;">Skills</h2>
+    <p style="text-align:left;">Additional content to be revealed as you scroll.</p>
   </section>
 
 
