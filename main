@@ -208,8 +208,8 @@
   <section id="professional-goals" class="hidden-section">
     <h2><p style="text-align:left;">Professional Goals</h2>
     <p style="text-align:left;">. Becoming Machine Learning Engineer 
-    </br>. Researching explainable models for Modern Physics Research 
-    </br>. Have unfinished personal projects into production until 2024</p>
+    <br>. Researching explainable models for Modern Physics Research 
+    <br>. Have unfinished personal projects into production until 2025</p>
   </section>
 
 
@@ -220,17 +220,31 @@
 
   <section id="education" class="hidden-section">
     <h2><p style="text-align:left;">Education</h2>
-    <p style="text-align:left;">Content for Education section.</p>
+    <p style="text-align:left;">. Brigham Young University GPA 3.96 
+    <br>. Brigham Young University - Idaho GPA 4.0
+    </p>
   </section>
 
   <section id="work-experience" class="hidden-section">
     <h2><p style="text-align:right;">Work Experience</h2>
-    <p style="text-align:right;">Content for Work Experience section.</p>
+    <p style="text-align:right;">Software Developer . 
+    <br>Software Tester Engineer .
+    <br>Operational Specialist .
+    <br>Grill Worker .
+    </p>
   </section>
 
   <section id="more-text" class="hidden-section">
     <h2><p style="text-align:left;">Skills</h2>
-    <p style="text-align:left;">Additional content to be revealed as you scroll.</p>
+    <p style="text-align:left;">. Python
+    <br>. SQL (DML/DDL)
+    <br>. C++
+    <br>. Java (begginer)
+    <br>. PHP (begginer)
+    <br>. HTML/CSS
+    <br>. Object Oriented Programming
+    <br>. Numpy, pandas, matplotlib, and other vectorization/data management python libraries
+    <br>. Sklearn </p>
   </section>
 
 
@@ -246,10 +260,10 @@
       function fadeInElements() {
         var scrollTop = window.scrollY || document.documentElement.scrollTop;
         var logoPosition = logo.getBoundingClientRect();
-        logo.style.opacity = logoPosition.top < windowHeight * 0.75 ? 1 : 0;
+        logo.style.opacity = logoPosition.top < windowHeight;
     
         var headerPosition = header.getBoundingClientRect();
-        header.style.opacity = headerPosition.top < windowHeight * 0.75 ? 1 : 0;
+        header.style.opacity = headerPosition.top <= windowHeight * 0.75 ? 1 : 0;
     
         sections.forEach(function (section) {
           var sectionPosition = section.getBoundingClientRect();
@@ -260,7 +274,7 @@
               : 0;
         });
     
-        topRightLinks.style.opacity = topRightLinks.getBoundingClientRect().top < windowHeight * 0.5 ? 1 : 0;
+        topRightLinks.style.opacity = topRightLinks.getBoundingClientRect().top < windowHeight;
       }
     
       window.addEventListener("scroll", function () {
@@ -303,7 +317,7 @@
     
       setTimeout(function () {
         updateSubtitle();
-      }, 5000);
+      }, 2000);
     });
   </script>
 
