@@ -215,7 +215,9 @@
 
   <section id="personal-projects" class="hidden-section">
     <h2><p style="text-align:right;">Personal Projects</h2>
-    <p style="text-align:right;">Python Scripture Memorizer . <br> can be found here -> <button type="button">Download Project</button></p>
+    <p style="text-align:right;">Python Scripture Memorizer .<br> can be found here -> <button type="button">Download Project</button></p>
+    <br>Chess Game Web Server .<br>Predicting Rainfall Amount in the State of Utah for 3 Different Time Scopes Using Supervised Learning Classification Models .
+    <br>QA Software Testing AI . 
   </section>
 
   <section id="education" class="hidden-section">
