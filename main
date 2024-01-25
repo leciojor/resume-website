@@ -20,6 +20,14 @@
       background: #000;
       overflow: auto;
     }
+    .subsection {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .ident-paragraph {
+      text-indent: 40px; 
+    }
 
     .boxed-text {
       border: 1px solid #ffffff; 
@@ -64,7 +72,7 @@
       bottom: 0;
       box-sizing: border-box;
       border: 100px solid transparent;
-      border-image: url('https://raw.githubusercontent.com/leciojor/resume-website/main/MNIST-handwritten-digits-dataset-visualized-by-Activeloop.webp?token=GHSAT0AAAAAACMQHNRJZPCXJ4W2VEKMELYEZNR5XMA') 100 repeat;
+      border-image: url('https://datasets.activeloop.ai/wp-content/uploads/2019/12/MNIST-handwritten-digits-dataset-visualized-by-Activeloop.webp') 100 repeat;
     }
 
     .title-subtitle-container img {
@@ -131,6 +139,8 @@
       animation: fadeIn 1s ease-in-out;
     }
 
+    
+
 
 
     @keyframes typing {
@@ -164,6 +174,10 @@
       display: inline-block;
     }
 
+
+    
+
+
 #subtitle-text {
   margin: 0;
   white-space: nowrap;
@@ -179,7 +193,7 @@
 <body>
 
   <div class="logo">
-    <img src="https://raw.githubusercontent.com/leciojor/resume-website/main/Projeto-Remover-fundo-2.png?token=GHSAT0AAAAAACMQHNRJ44RIMDGBKLKLM7HOZNR5W7A" alt="Logo" style="max-width: 165px; margin-left: 1px;"> 
+    <img src="https://i.postimg.cc/nhVyjtmS/Projeto-Remover-fundo-2.png" alt="Logo" style="max-width: 165px; margin-left: 1px;"> 
   </div>
 
   <div class="top-right-links">
@@ -216,53 +230,74 @@
    />
  
   <section id="professional-goals" class="hidden-section">
-    <h2><p style="text-align:left;">Professional Goals</h2>
-    <p style="text-align:left;">. Becoming Machine Learning Engineer 
-    <br>. Researching explainable models for Modern Physics Research 
-    <br>. Have unfinished personal projects into production until 2025</p>
+    <h2><p style="text-align:left;"><u>Professional Goals</u></h2>
+    <p style="text-align:left;"><b>*</b>  Becoming Machine Learning Engineer <b>*</b>  
+    <br><b>*</b> Researching explainable models for Modern Physics Research <b>*</b>
+    <br><b>*</b> Have unfinished personal projects into production until 2025 <b>*</b></p>
   </section>
 
 
   <section id="personal-projects" class="hidden-section">
-    <h2><p style="text-align:right;">Personal Projects</h2>
-    <p style="text-align:right;">Python Scripture Memorizer .<br> <span class="boxed-text">can be found here -> <button type="button">Download Project</button></span><br>
-    <br>Chess Game Web Server <b>(Under development)</b>.<br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span>
-    <br><br>Using Supervised Learning Classification Models to predict Rainfall Amount in the State of Utah .<br> 
-    <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span>
+    <h2><p style="text-align:right;"><u>Personal Projects</u></h2>
+    <p style="text-align:right;"><b>*</b> Python Scripture Memorizer <b>*</b><br> <span class="boxed-text">can be found here -> <button type="button">Download Project</button></span><br>
+    <br><b>*</b> Chess Game Web Server <b>(Under development)</b><b>*</b><br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span>
+    <br><br><b>*</b> Using Supervised Learning Classification Models to predict Rainfall Amount in the State of Utah <b>*</b><br> 
+    <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br>
     <br>  
-    <br>Resume Website .<br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br><br>
-    Automated Short Video Generator with GPT API <b>(Under development)</b>.
-    <br><br>QA Software Testing AI with sklearn and pytorch<b>(Under development)</b>. </p>
+    <b>*</b> University Database <b>*</b><br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br>
+    <br><b>*</b> Resume Website <b>*</b><br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br><br>
+    <b>*</b> Automated Short Video Generator with GPT API <b>(Under development)</b><b>*</b>
+    <br><br><b>*</b> QA Software Testing AI with sklearn and pytorch<b>(Under development)</b><b>*</b> </p>
   </section>
 
   <section id="education" class="hidden-section">
-    <h2><p style="text-align:left;">Education - GPA 3.96 (<i>Graduation - December 2025</i>)</h2>
-    <p style="text-align:left;">. Brigham Young University <i>*Dean's list of Spring of 2023</i>
-    <br>. Brigham Young University - Idaho
+    <h2><p style="text-align:left;"><u>Education - GPA 3.96</u> (<i>Graduation - December 2025</i>)</h2>
+    <p style="text-align:left;"><b>*</b> <b>Brigham Young University</b> <b>*</b><br>(01/23 – Current)   <br><i>*Dean's list of Spring of 2023</i><br>
+    <br><b>*</b> <b>Brigham Young University - Idaho</b> <b>*</b><br>(01/22 – 12/22)<br>
     <br><br><span class="boxed-text">TRANSCRIPTS -> <button type="button">See Transcripts</button>
     </p>
   </section>
 
+  
+
   <section id="work-experience" class="hidden-section">
-    <h2><p style="text-align:right;">Work Experience</h2>
-    <p style="text-align:right;">Software Developer . 
-    <br>Software Tester Engineer .
-    <br>Operational Specialist .
-    <br>Grill Worker .
+    <h2><p style="text-align:right;"><u>Work Experience</u></h2>
+    
+    <p style="text-align:right;"><b>*</b> <b style="font-size: 1.2em;">Full Stack Developer</b> <i>(BYU Student Life Technology)</i>  <b>*</b>
+     <br> (11/23 to current)
+
+     
+     <br class = "ident-paragraph"> Developed <b>back end</b> and <b>front end</b> of application for BYU Foundations of Leadership conference  - <br>
+    
+
+    <br><b>*</b> <b style="font-size: 1.2em;">Software Tester Engineer</b> <i>(BYU Office of IT)</i><b>*</b>
+    <br>(07/23 to 11/23)
+
+    
+    <br class = "ident-paragraph"> Tested more than <b>40</b> stories and found more than <b>200</b> issues  - 
+    <br class = "ident-paragraph"> Developed the approach now used by the QA team for <b>sprint Testing</b> and <b>E2E testing</b>  -  
+    <br class = "ident-paragraph"> Got familiar with the <b>software development lifecycle</b> from working with devs and UX team  -<br>
+  
+
+    <br><b>*</b> <b style="font-size: 1.2em;">Operational Specialist</b> <i>(BYUI Records and Registrations Office)</i><b>*</b>
+    <br>(02/22 to 08/22)
+    <br> 
+    <br><b>*</b> <b style="font-size: 1.2em;">Grill/Ice Cream Worker</b> <i>(BYU Creamery)</i><b>*</b>
+    <br>
     </p>
   </section>
 
   <section id="more-text" class="hidden-section">
-    <h2><p style="text-align:left;">Skills</h2>
-    <p style="text-align:left;">. Python
-    <br>. Numpy, pandas, matplotlib, and other vectorization/data management python libraries
-    <br>. Sklearn
-    <br>. SQL (DML/DDL)
-    <br>. C++
-    <br>. Java 
-    <br>. PHP (begginer)
-    <br>. HTML/CSS (begginer)
-    <br>. Object Oriented Programming
+    <h2><p style="text-align:left;"><u>Skills</u></h2>
+    <p style="text-align:left;"><b>*</b> Python <b>*</b>
+    <br><b>*</b> Numpy, pandas, matplotlib, and other vectorization/data management python libraries <b>*</b>
+    <br><b>*</b> Sklearn <b>*</b>
+    <br><b>*</b> SQL (DML/DDL) <b>*</b>
+    <br><b>*</b> C++ <b>*</b>
+    <br><b>*</b> Java <b>*</b>
+    <br><b>*</b> PHP (begginer) <b>*</b>
+    <br><b>*</b> HTML/CSS (begginer) <b>*</b>
+    <br><b>*</b> Object Oriented Programming <b>*</b>
      </p>
   </section>
 
