@@ -64,7 +64,7 @@
       bottom: 0;
       box-sizing: border-box;
       border: 100px solid transparent;
-      border-image: url('https://datasets.activeloop.ai/wp-content/uploads/2019/12/MNIST-handwritten-digits-dataset-visualized-by-Activeloop.webp') 100 repeat;
+      border-image: url('https://raw.githubusercontent.com/leciojor/resume-website/main/MNIST-handwritten-digits-dataset-visualized-by-Activeloop.webp?token=GHSAT0AAAAAACMQHNRJZPCXJ4W2VEKMELYEZNR5XMA') 100 repeat;
     }
 
     .title-subtitle-container img {
@@ -89,13 +89,13 @@
     }
 
     header h1 {
-      font-size: 2em;
+      font-size: 4em;
       border-right: 2px solid #fff;
       animation: typing 3s steps(40, end), fadeIn 1s ease-in-out 5s;
     }
 
     header h2 {
-      font-size: 1.5em;
+      font-size: 4em;
       animation: fadeIn 0.1s ease-in-out 5s;
     }
 
@@ -108,6 +108,10 @@
 
     section p {
       font-size: 1.2em;
+    }
+
+    section h2{
+      font-size: 2.2em;
     }
 
     .top-right-links {
@@ -166,8 +170,8 @@
   overflow: hidden;
   border-right: 2px solid #fff;
   animation: typing 5s steps(40, end), fadeIn 1s ease-in-out 5s;
-  font-weight: bold; /* Add this line to make the text bold */
-  text-decoration: underline; /* Add this line to underline the text */
+  font-weight: bold; 
+  text-decoration: underline; 
 }
   </style>
   <title>Lecio Ribeiro - Portfolio</title>
@@ -175,7 +179,7 @@
 <body>
 
   <div class="logo">
-    <img src="https://i.postimg.cc/nhVyjtmS/Projeto-Remover-fundo-2.png" alt="Logo" style="max-width: 165px; margin-left: 1px;"> 
+    <img src="https://raw.githubusercontent.com/leciojor/resume-website/main/Projeto-Remover-fundo-2.png?token=GHSAT0AAAAAACMQHNRJ44RIMDGBKLKLM7HOZNR5W7A" alt="Logo" style="max-width: 165px; margin-left: 1px;"> 
   </div>
 
   <div class="top-right-links">
@@ -227,14 +231,15 @@
     <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span>
     <br>  
     <br>Resume Website .<br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br><br>
-    Automated Short Video Generator with ChatGPT API <b>(Under development)</b>.
-    <br><br>QA Software Testing AI <b>(Under development)</b>. </p>
+    Automated Short Video Generator with GPT API <b>(Under development)</b>.
+    <br><br>QA Software Testing AI with sklearn and pytorch<b>(Under development)</b>. </p>
   </section>
 
   <section id="education" class="hidden-section">
-    <h2><p style="text-align:left;">Education</h2>
-    <p style="text-align:left;">. Brigham Young University GPA 3.96 
-    <br>. Brigham Young University - Idaho GPA 4.0
+    <h2><p style="text-align:left;">Education - GPA 3.96 (<i>Graduation - December 2025</i>)</h2>
+    <p style="text-align:left;">. Brigham Young University <i>*Dean's list of Spring of 2023</i>
+    <br>. Brigham Young University - Idaho
+    <br><br><span class="boxed-text">TRANSCRIPTS -> <button type="button">See Transcripts</button>
     </p>
   </section>
 
@@ -250,14 +255,15 @@
   <section id="more-text" class="hidden-section">
     <h2><p style="text-align:left;">Skills</h2>
     <p style="text-align:left;">. Python
+    <br>. Numpy, pandas, matplotlib, and other vectorization/data management python libraries
+    <br>. Sklearn
     <br>. SQL (DML/DDL)
     <br>. C++
     <br>. Java 
     <br>. PHP (begginer)
     <br>. HTML/CSS (begginer)
     <br>. Object Oriented Programming
-    <br>. Numpy, pandas, matplotlib, and other vectorization/data management python libraries
-    <br>. Sklearn </p>
+     </p>
   </section>
 
 
