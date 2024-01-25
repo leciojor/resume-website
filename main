@@ -21,6 +21,12 @@
       overflow: auto;
     }
 
+    .boxed-text {
+      border: 1px solid #ffffff; 
+      padding: 5px; 
+      display: inline-block; 
+    }
+
     .logo {
       position: fixed;
       top: 20px;
@@ -215,9 +221,14 @@
 
   <section id="personal-projects" class="hidden-section">
     <h2><p style="text-align:right;">Personal Projects</h2>
-    <p style="text-align:right;">Python Scripture Memorizer .<br> can be found here -> <button type="button">Download Project</button></p>
-    <br>Chess Game Web Server .<br>Predicting Rainfall Amount in the State of Utah for 3 Different Time Scopes Using Supervised Learning Classification Models .
-    <br>QA Software Testing AI . 
+    <p style="text-align:right;">Python Scripture Memorizer .<br> <span class="boxed-text">can be found here -> <button type="button">Download Project</button></span><br>
+    <br>Chess Game Web Server <b>(Under development)</b>.<br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span>
+    <br><br>Using Supervised Learning Classification Models to predict Rainfall Amount in the State of Utah .<br> 
+    <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span>
+    <br>  
+    <br>Resume Website .<br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br><br>
+    Automated Short Video Generator with ChatGPT API <b>(Under development)</b>.
+    <br><br>QA Software Testing AI <b>(Under development)</b>. </p>
   </section>
 
   <section id="education" class="hidden-section">
@@ -241,9 +252,9 @@
     <p style="text-align:left;">. Python
     <br>. SQL (DML/DDL)
     <br>. C++
-    <br>. Java (begginer)
+    <br>. Java 
     <br>. PHP (begginer)
-    <br>. HTML/CSS
+    <br>. HTML/CSS (begginer)
     <br>. Object Oriented Programming
     <br>. Numpy, pandas, matplotlib, and other vectorization/data management python libraries
     <br>. Sklearn </p>
