@@ -20,14 +20,9 @@
       background: #000;
       overflow: auto;
     }
-    .subsection {
-      display: inline-block;
-      margin-left: 20px;
-    }
 
-    .ident-paragraph {
-      text-indent: 40px; 
-    }
+    
+    
 
     .boxed-text {
       border: 1px solid #ffffff; 
@@ -116,6 +111,7 @@
 
     section p {
       font-size: 1.2em;
+      
     }
 
     section h2{
@@ -174,6 +170,12 @@
       display: inline-block;
     }
 
+    #achieve {
+  text-indent: 40px;
+  
+  
+}
+
 
     
 
@@ -229,7 +231,7 @@
   src="imagem minha"
    />
  
-  <section id="professional-goals" class="hidden-section">
+  <section id="professional-goals" class="hidden-section fade-in">
     <h2><p style="text-align:left;"><u>Professional Goals</u></h2>
     <p style="text-align:left;"><b>*</b>  Becoming Machine Learning Engineer <b>*</b>  
     <br><b>*</b> Researching explainable models for Modern Physics Research <b>*</b>
@@ -237,20 +239,20 @@
   </section>
 
 
-  <section id="personal-projects" class="hidden-section">
+  <section id="personal-projects" class="hidden-section fade-in">
     <h2><p style="text-align:right;"><u>Personal Projects</u></h2>
-    <p style="text-align:right;"><b>*</b> Python Scripture Memorizer <b>*</b><br> <span class="boxed-text">can be found here -> <button type="button">Download Project</button></span><br>
-    <br><b>*</b> Chess Game Web Server <b>(Under development)</b><b>*</b><br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span>
+    <p style="text-align:right;"><b>*</b> Python Scripture Memorizer <b>*</b><br> <span class="boxed-text">can be found here -> <a href="https://github.com/leciojor/resume-website/raw/main/SCRIPTURE_MEMORY%20(2).exe"><button type="button">Download Project</button></a></span><br>
+    <br><b>*</b> Chess Game Web Server <b>(Under development)</b><b>*</b><br> <span class="boxed-text">can be found here -> <a href="https://github.com/leciojor/chess"><button type="button">GitHub page</button></a></span>
     <br><br><b>*</b> Using Supervised Learning Classification Models to predict Rainfall Amount in the State of Utah <b>*</b><br> 
-    <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br>
+    <span class="boxed-text">can be found here -> <a href="https://github.com/leciojor/Using-Supervised-Learning-Classification-Models-to-predict-Rainfall-Amount-in-the-State-of-Utah"><button type="button">GitHub page</button></a></span><br>
     <br>  
     <b>*</b> University Database <b>*</b><br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br>
-    <br><b>*</b> Resume Website <b>*</b><br> <span class="boxed-text">can be found here -> <button type="button">GitHub page</button></span><br><br>
+    <br><b>*</b> Resume Website <b>*</b><br> <span class="boxed-text">can be found here -> <a href="https://github.com/leciojor/resume-website/tree/main"><button type="button">GitHub page</button><a></span><br><br>
     <b>*</b> Automated Short Video Generator with GPT API <b>(Under development)</b><b>*</b>
     <br><br><b>*</b> QA Software Testing AI with sklearn and pytorch<b>(Under development)</b><b>*</b> </p>
   </section>
 
-  <section id="education" class="hidden-section">
+  <section id="education" class="hidden-section fade-in">
     <h2><p style="text-align:left;"><u>Education - GPA 3.96</u> (<i>Graduation - December 2025</i>)</h2>
     <p style="text-align:left;"><b>*</b> <b>Brigham Young University</b> <b>*</b><br>(01/23 – Current)   <br><i>*Dean's list of Spring of 2023</i><br>
     <br><b>*</b> <b>Brigham Young University - Idaho</b> <b>*</b><br>(01/22 – 12/22)<br>
@@ -260,34 +262,40 @@
 
   
 
-  <section id="work-experience" class="hidden-section">
-    <h2><p style="text-align:right;"><u>Work Experience</u></h2>
+  <section id="work-experience" class="hidden-section fade-in">
+    <h2 style="text-align:right;"><u>Work Experience</u></h2>
     
-    <p style="text-align:right;"><b>*</b> <b style="font-size: 1.2em;">Full Stack Developer</b> <i>(BYU Student Life Technology)</i>  <b>*</b>
-     <br> (11/23 to current)
-
-     
-     <br class = "ident-paragraph"> Developed <b>back end</b> and <b>front end</b> of application for BYU Foundations of Leadership conference  - <br>
-    
-
-    <br><b>*</b> <b style="font-size: 1.2em;">Software Tester Engineer</b> <i>(BYU Office of IT)</i><b>*</b>
-    <br>(07/23 to 11/23)
+    <p style="text-align:right;"><b>*</b> <b style="font-size: 1.2em;">Full Stack Developer</b> <i>(BYU Student Life Technology)</i> <b>*</b>
+      <br> (11/23 to current)
+      <br > 
+      <span class="boxed-text">
+      Developed <b>back end</b> and <b>front end</b> of the application for BYU Foundations of Leadership conference -
+    </span>
+    </p>
 
     
-    <br class = "ident-paragraph"> Tested more than <b>40</b> stories and found more than <b>200</b> issues  - 
-    <br class = "ident-paragraph"> Developed the approach now used by the QA team for <b>sprint Testing</b> and <b>E2E testing</b>  -  
-    <br class = "ident-paragraph"> Got familiar with the <b>software development lifecycle</b> from working with devs and UX team  -<br>
+    <p style="text-align:right;"><b>*</b> <b style="font-size: 1.2em;">Software Tester Engineer</b> <i>(BYU Office of IT)</i><b>*</b>
+      <br>(07/23 to 11/23)<br>
+
+      
+      <span class="boxed-text">
+        Tested more than <b>40</b> stories and found more than <b>200</b> issues -<br>
+         Developed the approach now used by the QA team for <b>sprint Testing</b> and <b>E2E testing</b> - <br>
+         Got familiar with the <b>software development lifecycle</b> from working with devs and UX team - <br>
+      </span>
+      
+    </p>
   
-
-    <br><b>*</b> <b style="font-size: 1.2em;">Operational Specialist</b> <i>(BYUI Records and Registrations Office)</i><b>*</b>
-    <br>(02/22 to 08/22)
-    <br> 
-    <br><b>*</b> <b style="font-size: 1.2em;">Grill/Ice Cream Worker</b> <i>(BYU Creamery)</i><b>*</b>
-    <br>
+    <p style="text-align:right;"><b>*</b> <b style="font-size: 1.2em;">Operational Specialist</b> <i>(BYUI Records and Registrations Office)</i><b>*</b>
+      <br>(02/22 to 08/22)
+    </p>
+  
+    <p style="text-align:right;"><b>*</b> <b style="font-size: 1.2em;">Grill/Ice Cream Worker</b> <i>(BYU Creamery)</i><b>*</b>
     </p>
   </section>
+  
 
-  <section id="more-text" class="hidden-section">
+  <section id="more-text" class="hidden-section fade-in">
     <h2><p style="text-align:left;"><u>Skills</u></h2>
     <p style="text-align:left;"><b>*</b> Python <b>*</b>
     <br><b>*</b> Numpy, pandas, matplotlib, and other vectorization/data management python libraries <b>*</b>
@@ -327,6 +335,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   showElements();
+
+  
 
   var subtitleText = document.getElementById("subtitle-text");
   var staticText = document.getElementById("static-text");
