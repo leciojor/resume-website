@@ -30,6 +30,8 @@
       display: inline-block; 
     }
 
+    
+
     .logo {
       position: fixed;
       top: 20px;
@@ -47,7 +49,7 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
-      opacity: 0;
+      
       animation: fadeIn 1s ease-in-out;
       position: relative;
     }
@@ -97,6 +99,38 @@
       animation: typing 3s steps(40, end), fadeIn 1s ease-in-out 5s;
     }
 
+    .container {
+      position: relative;
+      text-align: center;
+      
+      
+      
+    }
+
+    .fit-picture {
+      width: 200px; /* Adjust the width as needed */
+      height: auto;
+    }
+
+    .text-bottom {
+      
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8); 
+      color: #000000;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
     header h2 {
       font-size: 4em;
       animation: fadeIn 0.1s ease-in-out 5s;
@@ -131,9 +165,7 @@
       opacity: 0;
     }
 
-    .fade-in {
-      animation: fadeIn 1s ease-in-out;
-    }
+    
 
     
 
@@ -150,14 +182,7 @@
       animation-duration: 5s;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
+    
     
   #subtitle {
       position: relative;
@@ -221,15 +246,17 @@
           <span id="subtitle-text"></span>
           <span id="static-text"> Student and Software Developer</span>
         </div>
+
+        
       </div>
+      
     </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="text-bottom container" >Feel free to scroll down!</div>
   </header>
  
-// add picture of me 
- <img
-  class="fit-picture"
-  src="imagem minha"
-   />
+
+  
  
   <section id="professional-goals" class="hidden-section fade-in">
     <h2><p style="text-align:left;"><u>Professional Goals</u></h2>
@@ -255,8 +282,10 @@
   <section id="education" class="hidden-section fade-in">
     <h2><p style="text-align:left;"><u>Education - GPA 3.96</u> (<i>Graduation - December 2025</i>)</h2>
     <p style="text-align:left;"><b>*</b> <b>Brigham Young University</b> <b>*</b><br>(01/23 – Current)   <br><i>*Dean's list of Spring of 2023</i><br>
-    <br><b>*</b> <b>Brigham Young University - Idaho</b> <b>*</b><br>(01/22 – 12/22)<br>
-    <br><br><span class="boxed-text">TRANSCRIPTS -> <button type="button">See Transcripts</button>
+    <br><b>*</b> <b>Brigham Young University - Idaho</b> <b>*</b><br>(01/22 – 12/22)
+    <br><br><span class="boxed-text">TRANSCRIPTS -> <a href="https://github.com/leciojor/resume-website/blob/main/TRANSCRIPTS_WI24.pdf"><button type="button">See Transcripts</button></a></span>
+
+
     </p>
   </section>
 
