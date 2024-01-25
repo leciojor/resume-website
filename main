@@ -241,18 +241,21 @@
   <header>
     <div class="title-subtitle-container">
       <div class="name-subtitle">
+    
         <h1>Lecio Ribeiro</h1>
         <div id="subtitle">
           <span id="subtitle-text"></span>
           <span id="static-text"> Student and Software Developer</span>
+          
         </div>
-
         
       </div>
       
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br>
+    
     <div class="text-bottom container" >Feel free to scroll down!</div>
+    
   </header>
  
 
