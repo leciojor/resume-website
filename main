@@ -252,75 +252,70 @@
 
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var logo = document.querySelector('.logo');
-      var header = document.querySelector('header');
-      var sections = document.querySelectorAll('section');
-      var topRightLinks = document.querySelector('.top-right-links');
-      var windowHeight = window.innerHeight;
-    
-      function fadeInElements() {
-        var scrollTop = window.scrollY || document.documentElement.scrollTop;
-        var logoPosition = logo.getBoundingClientRect();
-        logo.style.opacity = logoPosition.top < windowHeight;
-    
-        var headerPosition = header.getBoundingClientRect();
-        header.style.opacity = headerPosition.top <= windowHeight * 0.75 ? 1 : 0;
-    
-        sections.forEach(function (section) {
-          var sectionPosition = section.getBoundingClientRect();
-          section.style.opacity =
-            sectionPosition.top < windowHeight * 0.75 &&
-            sectionPosition.bottom >= 0
-              ? 1
-              : 0;
-        });
-    
-        topRightLinks.style.opacity = topRightLinks.getBoundingClientRect().top < windowHeight;
-      }
-    
-      window.addEventListener("scroll", function () {
-        fadeInElements();
-      });
-    
-      fadeInElements();
-    
-      var subtitleText = document.getElementById("subtitle-text");
-      var staticText = document.getElementById("static-text");
-      var topics = ["Machine Learning", "Computer Science", "Math", "Deep Learning", "Data Science"];
-      var currentTopicIndex = 0;
-    
-      function updateSubtitle() {
-        subtitleText.textContent = "";
-        var topic = topics[currentTopicIndex];
-        var interval = setInterval(function () {
-          subtitleText.textContent += topic.charAt(subtitleText.textContent.length);
-          if (subtitleText.textContent === topic) {
-            clearInterval(interval);
-            setTimeout(function () {
-              destypeSubtitle();
-            }, 1000);
-          }
-        }, 80);
-      }
-    
-      function destypeSubtitle() {
-        var interval = setInterval(function () {
-          subtitleText.textContent = subtitleText.textContent.slice(0, -1);
-          if (subtitleText.textContent === "") {
-            clearInterval(interval);
-            setTimeout(function () {
-              currentTopicIndex = (currentTopicIndex + 1) % topics.length;
-              updateSubtitle();
-            }, 1000);
-          }
-        }, 80);
-      }
-    
-      setTimeout(function () {
-        updateSubtitle();
-      }, 2000);
+document.addEventListener("DOMContentLoaded", function () {
+  var logo = document.querySelector('.logo');
+  var header = document.querySelector('header');
+  var sections = document.querySelectorAll('section');
+  var topRightLinks = document.querySelector('.top-right-links');
+
+  function showElements() {
+    logo.style.opacity = 1;
+
+    header.style.opacity = 1;
+
+    sections.forEach(function (section) {
+      section.style.opacity = 1;
     });
+
+    topRightLinks.style.opacity = 1;
+  }
+
+  window.addEventListener("scroll", function () {
+    showElements();
+  });
+
+  showElements();
+
+  var subtitleText = document.getElementById("subtitle-text");
+  var staticText = document.getElementById("static-text");
+  var topics = ["Machine Learning", "Computer Science", "Math", "Deep Learning", "Data Science"];
+  var currentTopicIndex = 0;
+
+  function updateSubtitle() {
+    subtitleText.textContent = "";
+    var topic = topics[currentTopicIndex];
+    var interval = setInterval(function () {
+      subtitleText.textContent += topic.charAt(subtitleText.textContent.length);
+      if (subtitleText.textContent === topic) {
+        clearInterval(interval);
+        setTimeout(function () {
+          destypeSubtitle();
+        }, 1000);
+      }
+    }, 80);
+  }
+
+  function destypeSubtitle() {
+    var interval = setInterval(function () {
+      subtitleText.textContent = subtitleText.textContent.slice(0, -1);
+      if (subtitleText.textContent === "") {
+        clearInterval(interval);
+        setTimeout(function () {
+          currentTopicIndex = (currentTopicIndex + 1) % topics.length;
+          updateSubtitle();
+        }, 1000);
+      }
+    }, 80);
+  }
+
+  setTimeout(function () {
+    updateSubtitle();
+  }, 2000);
+});
+
+
+
+
   </script>
 
 
